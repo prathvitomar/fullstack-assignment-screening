@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ff007a;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .card.popular {
+    border-color: #ff007a;
+  }
+  
+  .card input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .radio-label {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2px; */
+  }
+  
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+  }
+  
+  .unit-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  
+  .badge {
+    font-size: 12px;
+    color: #fff;
+    background-color: #ff007a;
+    padding: 2px 5px;
+    /* border-radius: 12px; */
+    display: inline-block;
+  }
+
+  .sub-text{
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .old-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* .dropdown-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+  } */
+
+/* .dropdown-container {
+    display: none; 
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease; 
+  }
+  
+  .card .dropdown-container.active {
+    display: block;
+    max-height: 500px; 
+    opacity: 1;
+  }
+  
+  
+  .dropdown label {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .dropdown select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  } */
+
+
+  /* Add this CSS to make dropdown hidden initially */
+.dropdown-container {
+    display: none; /* Hide all dropdowns initially */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .card input[type="radio"]:checked + .dropdown-container {
+    display: grid; /* Show dropdowns only when radio is checked */
+  }
+  
+  .dropdown label {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .dropdown select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+  .most-popular {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: #ff007a;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 10px;
+    border-radius: 2px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .free-delivery {
+    font-weight: bold;
+    color: #ff007a;
+  }
+  
+  .total {
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    width: 100%;
+    background-color: #ff007a;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .number-rank{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #e6006c;
+  }
+  
+  .powered {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+  }
+
+  .dropdown-container {
+    display: none; /* Initially hidden */
+  }
+  
+  
